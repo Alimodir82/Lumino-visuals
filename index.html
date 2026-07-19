@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لومینو | Lumino Studio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Vazirmatn', system-ui, sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('https://picsum.photos/id/1015/1920/1080') center/cover no-repeat;
+        }
+        
+        .teal-accent {
+            color: #14b8a6;
+        }
+        
+        .purple-accent {
+            color: #a855f7;
+        }
+        
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #14b8a6;
+            transform: translateY(-2px);
+        }
+        
+        .service-card {
+            transition: all 0.4s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- Navbar -->
+    <nav class="bg-zinc-950 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="lumino.jpg" alt="لوگو لومینو" class="h-10 w-10 rounded-xl object-cover">
+                <div>
+                    <span class="text-2xl font-bold tracking-tight">لومینو</span>
+                    <span class="text-xs text-zinc-500 block -mt-1">LUMINO</span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm">
+                <a href="#about" class="nav-link">درباره ما</a>
+                <a href="#services" class="nav-link">خدمات</a>
+                <a href="#portfolio" class="nav-link">نمونه کارها</a>
+                <a href="#collaborations" class="nav-link">همکاری‌ها</a>
+                <a href="#contact" class="nav-link">ارتباط با ما</a>
+            </div>
+            
+            <a href="https://www.instagram.com/lumino_visuals" target="_blank" 
+               class="bg-gradient-to-r from-teal-500 to-purple-600 px-6 py-2.5 rounded-2xl text-sm font-medium hover:scale-105 transition-transform">
+                اینستاگرام
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-bg h-screen flex items-center">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 bg-zinc-900/70 backdrop-blur-md px-6 py-2 rounded-3xl mb-6 border border-zinc-700">
+                <span class="w-2 h-2 bg-teal-400 rounded-full animate-pulse"></span>
+                <span class="text-sm uppercase tracking-widest">استودیو تولید محتوا</span>
+            </div>
+            
+            <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+                محتوای <span class="teal-accent">درخشان</span> برای<br>برندهای جسور
+            </h1>
+            <p class="text-xl text-zinc-400 max-w-2xl mx-auto mb-10">
+                لومینو — جایی که ایده‌ها به محتوای قدرتمند و تأثیرگذار تبدیل می‌شوند
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-zinc-900 px-8 py-4 rounded-2xl font-medium text-lg hover:bg-teal-400 hover:text-white transition-all">
+                    شروع همکاری
+                </a>
+                <a href="#portfolio" class="border border-zinc-400 hover:border-white px-8 py-4 rounded-2xl font-medium text-lg transition-all">
+                    دیدن نمونه کارها
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center">
+            <span class="text-xs tracking-widest mb-2">اسکرول کنید</span>
+            <i class="fas fa-chevron-down animate-bounce text-2xl"></i>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="py-24 bg-zinc-900">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">درباره <span class="purple-accent">لومینو</span></h2>
+                    <div class="text-zinc-300 leading-relaxed text-lg space-y-6">
+                        <p>لومینو یک استودیوی تولید محتوای تخصصی برای اینستاگرام است. ما از مرحله ایده و استراتژی محتوا تا سناریونویسی، تصویربرداری، تدوین و طراحی کاور تمام فرآیند تولید محتوا را به صورت یکپارچه انجام می‌دهیم.</p>
+                        <p>ماموریت ما ساخت محتوایی است که فقط زیبا نباشد؛ بلکه توجه مخاطب را جلب کند، تعامل ایجاد کند و به رشد برند شما کمک کند.</p>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="lumino.jpg" alt="لومینو" class="rounded-3xl shadow-2xl w-full">
+                    <div class="absolute -bottom-6 -left-6 bg-zinc-800 p-6 rounded-3xl border border-teal-500/30">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl">✦</div>
+                            <div>
+                                <div class="text-teal-400 text-sm font-medium">بیش از ۲۵۰ پروژه موفق</div>
+                                <div class="text-zinc-400 text-sm">در سال ۱۴۰۴</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="px-4 py-2 bg-zinc-800 text-teal-400 text-sm rounded-full">خدمات ما</span>
+                <h2 class="text-4xl font-bold mt-4">تمام آنچه برای محتوای حرفه‌ای نیاز دارید</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-teal-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">📝</div>
+                    <h3 class="text-2xl font-semibold mb-3">سناریونویسی</h3>
+                    <p class="text-zinc-400">ایده‌پردازی خلاقانه و نوشتن سناریوهای جذاب و هدفمند</p>
+                </div>
+                
+                <div class="service-card bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">📸</div>
+                    <h3 class="text-2xl font-semibold mb-3">تصویربرداری</h3>
+                    <p class="text-zinc-400">فیلمبرداری حرفه‌ای با تجهیزات مدرن و نورپردازی خلاقانه</p>
+                </div>
+                
+                <div class="service-card bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-teal-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">✂️</div>
+                    <h3 class="text-2xl font-semibold mb-3">تدوین</h3>
+                    <p class="text-zinc-400">تدوین حرفه‌ای، رنگ‌گریدینگ و افزودن افکت‌های بصری</p>
+                </div>
+                
+                <div class="service-card bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🎨</div>
+                    <h3 class="text-2xl font-semibold mb-3">طراحی کاور</h3>
+                    <p class="text-zinc-400">طراحی کاورهای چشمگیر و هماهنگ با هویت بصری برند</p>
+                </div>
+                
+                <div class="service-card bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-teal-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🌐</div>
+                    <h3 class="text-2xl font-semibold mb-3">طراحی سایت</h3>
+                    <p class="text-zinc-400">طراحی وبسایت‌های مدرن و بهینه برای برند شما</p>
+                </div>
+                
+                <div class="service-card bg-zinc-900 border border-zinc-800 p-8 rounded-3xl">
+                    <div class="w-14 h-14 bg-purple-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6">🤖</div>
+                    <h3 class="text-2xl font-semibold mb-3">هوش مصنوعی</h3>
+                    <p class="text-zinc-400">استفاده خلاقانه از هوش مصنوعی در تولید محتوا</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-24 bg-zinc-900">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-4">نمونه کارها</h2>
+            <p class="text-zinc-400 mb-12">برخی از پروژه‌هایی که با عشق ساخته‌ایم</p>
+            
+            <a href="https://www.instagram.com/lumino_visuals?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+               target="_blank"
+               class="inline-flex items-center gap-3 bg-gradient-to-r from-teal-500 to-purple-600 hover:from-teal-600 hover:to-purple-700 transition-all text-white px-10 py-5 rounded-3xl text-xl font-medium group">
+                <i class="fab fa-instagram text-3xl"></i>
+                <div>
+                    <div>@lumino_visuals</div>
+                    <div class="text-sm opacity-75">مشاهده تمام نمونه کارها در اینستاگرام</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Collaborations -->
+    <section id="collaborations" class="py-24">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold">همکاری با برندهای بزرگ</h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-10 items-center opacity-75 hover:opacity-100 transition-all">
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-zinc-400">دیجی‌کالا</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-zinc-400">موبونیوز</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-zinc-400">هف هشتاد</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold text-zinc-400">تکفایندر</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold mb-8">آماده‌ایم با هم درخشش کنیم</h2>
+            <p class="text-xl text-zinc-400 mb-12">برای شروع همکاری یا دریافت مشاوره با ما در ارتباط باشید</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center items-center">
+                <a href="tel:09369603820" class="flex items-center gap-4 bg-zinc-800 hover:bg-teal-500/10 border border-zinc-700 hover:border-teal-500 px-8 py-6 rounded-3xl transition-all group">
+                    <i class="fas fa-phone text-3xl text-teal-400"></i>
+                    <div class="text-right">
+                        <div class="text-sm text-zinc-400">تماس مستقیم</div>
+                        <div class="text-2xl font-medium">۰۹۳۶۹۶۰۳۸۲۰</div>
+                    </div>
+                </a>
+                
+                <a href="tel:09123154845" class="flex items-center gap-4 bg-zinc-800 hover:bg-purple-500/10 border border-zinc-700 hover:border-purple-500 px-8 py-6 rounded-3xl transition-all group">
+                    <i class="fas fa-phone text-3xl text-purple-400"></i>
+                    <div class="text-right">
+                        <div class="text-sm text-zinc-400">تماس مستقیم</div>
+                        <div class="text-2xl font-medium">۰۹۱۲۳۱۵۴۸۴۵</div>
+                    </div>
+                </a>
+            </div>
+            
+            <div class="mt-16">
+                <a href="https://www.instagram.com/lumino_visuals" target="_blank" class="inline-flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                    <i class="fab fa-instagram text-2xl"></i>
+                    <span class="text-lg">@lumino_visuals</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 border-t border-zinc-800">
+        <div class="max-w-6xl mx-auto px-6 text-center text-zinc-500 text-sm">
+            <p>© ۱۴۰۵ لومینو استودیو — تمام حقوق محفوظ است</p>
+            <p class="mt-2">طراحی و توسعه با ❤️ برای برندهای ایرانی</p>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script already loaded
+    </script>
+</body>
+</html>
